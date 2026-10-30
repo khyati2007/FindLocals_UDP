@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net" modified="2026-10-30T00:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="class-diagram" name="Class Diagram">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="940" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="User" value="&lt;div style=&quot;line-height:1.4&quot;&gt;&lt;b&gt;User&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ userId: int&lt;br&gt;+ name: string&lt;br&gt;+ email: string&lt;br&gt;+ phone: string&lt;br&gt;+ role: string&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ register()&lt;br&gt;+ login()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#193B61;fontColor=#102A43;fontSize=14;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="470" y="90" width="380" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="Admin" value="&lt;div style=&quot;line-height:1.4&quot;&gt;&lt;b&gt;Admin&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ adminId: int&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ verifyWorker()&lt;br&gt;+ manageUsers()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#193B61;fontColor=#102A43;fontSize=14;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="70" y="410" width="280" height="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="Notification" value="&lt;div style=&quot;line-height:1.4&quot;&gt;&lt;b&gt;Notification&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ notificationId: int&lt;br&gt;+ message: string&lt;br&gt;+ isRead: boolean&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#193B61;fontColor=#102A43;fontSize=14;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="390" y="410" width="300" height="125" as="geometry"/>
+        </mxCell>
+        <mxCell id="Customer" value="&lt;div style=&quot;line-height:1.4&quot;&gt;&lt;b&gt;Customer&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ address: string&lt;br&gt;+ preferredLanguage: string&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ searchWorkers()&lt;br&gt;+ createBooking()&lt;br&gt;+ submitReview()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#193B61;fontColor=#102A43;fontSize=14;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="480" y="270" width="370" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="Worker" value="&lt;div style=&quot;line-height:1.4&quot;&gt;&lt;b&gt;Worker&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ serviceArea: string&lt;br&gt;+ skills: string[]&lt;br&gt;+ experience: int&lt;br&gt;+ availability: string&lt;br&gt;+ verified: boolean&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ manageProfile()&lt;br&gt;+ respondToBooking()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#193B61;fontColor=#102A43;fontSize=14;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="930" y="270" width="440" height="150" as="geometry"/>
+        </mxCell>
+        <mxCell id="ServiceCategory" value="&lt;div style=&quot;line-height:1.4&quot;&gt;&lt;b&gt;ServiceCategory&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ categoryId: int&lt;br&gt;+ name: string&lt;br&gt;+ active: boolean&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#193B61;fontColor=#102A43;fontSize=14;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="80" width="360" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="Booking" value="&lt;div style=&quot;line-height:1.4&quot;&gt;&lt;b&gt;Booking&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ bookingId: int&lt;br&gt;+ scheduledAt: datetime&lt;br&gt;+ address: string&lt;br&gt;+ status: string&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ create()&lt;br&gt;+ updateStatus()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#193B61;fontColor=#102A43;fontSize=14;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="550" y="540" width="500" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="Payment" value="&lt;div style=&quot;line-height:1.4&quot;&gt;&lt;b&gt;Payment&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ paymentId: int&lt;br&gt;+ amount: decimal&lt;br&gt;+ method: string&lt;br&gt;+ status: string&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#193B61;fontColor=#102A43;fontSize=14;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="320" y="760" width="360" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="Review" value="&lt;div style=&quot;line-height:1.4&quot;&gt;&lt;b&gt;Review&lt;/b&gt;&lt;br&gt;&lt;hr/&gt;&lt;br&gt;+ reviewId: int&lt;br&gt;+ rating: int&lt;br&gt;+ comment: string&lt;br&gt;+ createdAt: datetime&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#193B61;fontColor=#102A43;fontSize=14;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="850" y="760" width="420" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="role" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#526579;fontSize=12;" edge="1" parent="1" source="User" target="Admin">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="role" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#526579;fontSize=12;" edge="1" parent="1" source="User" target="Customer">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="role" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#526579;fontSize=12;" edge="1" parent="1" source="User" target="Worker">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="1 receives 0..*" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#526579;fontSize=12;" edge="1" parent="1" source="User" target="Notification">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="manages" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#334155;fontSize=11;" edge="1" parent="1" source="Admin" target="Notification">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="1 creates 0..*" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#526579;fontSize=12;" edge="1" parent="1" source="Customer" target="Booking">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" value="1 receives 0..*" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#526579;fontSize=12;" edge="1" parent="1" source="Worker" target="Booking">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" value="1 category / many workers" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#526579;fontSize=12;" edge="1" parent="1" source="ServiceCategory" target="Worker">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" value="1 category / many bookings" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#526579;fontSize=12;" edge="1" parent="1" source="ServiceCategory" target="Booking">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e10" value="1 has 0..*" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#526579;fontSize=12;" edge="1" parent="1" source="Booking" target="Payment">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e11" value="0..1 review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#526579;fontSize=12;" edge="1" parent="1" source="Booking" target="Review">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="title" value="FindLocals - Class Diagram" style="text;html=1;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;fontColor=#193B61;" vertex="1" parent="1">
+          <mxGeometry x="430" y="20" width="500" height="45" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="booking-sequence" name="Service Booking Sequence">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title2" value="FindLocals - Sequence Diagram: Service Booking" style="text;html=1;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;fontColor=#193B61;" vertex="1" parent="1">
+          <mxGeometry x="340" y="20" width="820" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="customer" value="Customer" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F4F8FC;strokeColor=#193B61;fontColor=#102A43;fontSize=15;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="180" width="150" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="customerlife" value="" style="shape=line;html=1;strokeColor=#718096;dashed=1;dashPattern=6 6;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="175.0" y="245" width="1" height="740" as="geometry"/>
+        </mxCell>
+        <mxCell id="app" value="FindLocals Web App" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F4F8FC;strokeColor=#193B61;fontColor=#102A43;fontSize=15;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="400" y="230" width="120" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="applife" value="" style="shape=line;html=1;strokeColor=#718096;dashed=1;dashPattern=6 6;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="460.0" y="295" width="1" height="740" as="geometry"/>
+        </mxCell>
+        <mxCell id="db" value="Database" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F4F8FC;strokeColor=#193B61;fontColor=#102A43;fontSize=15;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="180" width="155" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="dblife" value="" style="shape=line;html=1;strokeColor=#718096;dashed=1;dashPattern=6 6;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="877.5" y="245" width="1" height="740" as="geometry"/>
+        </mxCell>
+        <mxCell id="worker" value="Worker" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F4F8FC;strokeColor=#193B61;fontColor=#102A43;fontSize=15;fontStyle=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="180" width="155" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="workerlife" value="" style="shape=line;html=1;strokeColor=#718096;dashed=1;dashPattern=6 6;strokeWidth=1.5;" vertex="1" parent="1">
+          <mxGeometry x="1267.5" y="245" width="1" height="740" as="geometry"/>
+        </mxCell>
+        <mxCell id="m1s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="188" y="268" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m1t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="268" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m1" value="1. Search workers by service and location" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;strokeColor=#193B61;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m1s" target="m1t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m2s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="328" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m2t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="888" y="328" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m2" value="2. Query matching worker profiles" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;strokeColor=#193B61;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m2s" target="m2t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m3s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="888" y="388" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m3t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="388" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m3" value="3. Return worker results" style="edgeStyle=none;html=1;rounded=0;endArrow=open;endFill=0;dashed=1;dashPattern=6 4;strokeColor=#526579;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m3s" target="m3t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m4s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="448" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m4t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="188" y="448" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m4" value="4. Display workers, ratings and profile details" style="edgeStyle=none;html=1;rounded=0;endArrow=open;endFill=0;dashed=1;dashPattern=6 4;strokeColor=#526579;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m4s" target="m4t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m5s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="188" y="508" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m5t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="508" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m5" value="5. Select worker and submit booking request" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;strokeColor=#193B61;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m5s" target="m5t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m6s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="568" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m6t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="888" y="568" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m6" value="6. Save booking with pending status" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;strokeColor=#193B61;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m6s" target="m6t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m7s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="888" y="628" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m7t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="628" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m7" value="7. Return booking confirmation" style="edgeStyle=none;html=1;rounded=0;endArrow=open;endFill=0;dashed=1;dashPattern=6 4;strokeColor=#526579;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m7s" target="m7t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m8s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="688" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m8t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="1278" y="688" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m8" value="8. Notify worker of new request" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;strokeColor=#193B61;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m8s" target="m8t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m9s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="1278" y="748" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m9t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="748" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m9" value="9. Accept or decline request" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;strokeColor=#193B61;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m9s" target="m9t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m10s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="808" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m10t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="888" y="808" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m10" value="10. Update booking status" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;strokeColor=#193B61;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m10s" target="m10t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m11s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="888" y="868" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m11t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="868" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m11" value="11. Confirm status update" style="edgeStyle=none;html=1;rounded=0;endArrow=open;endFill=0;dashed=1;dashPattern=6 4;strokeColor=#526579;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m11s" target="m11t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m12s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="928" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m12t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="188" y="928" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m12" value="12. Notify customer of worker response" style="edgeStyle=none;html=1;rounded=0;endArrow=open;endFill=0;dashed=1;dashPattern=6 4;strokeColor=#526579;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m12s" target="m12t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m13s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="1278" y="988" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m13t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="988" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m13" value="13. Update job status after service" style="edgeStyle=none;html=1;rounded=0;endArrow=open;endFill=0;dashed=1;dashPattern=6 4;strokeColor=#526579;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m13s" target="m13t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="m14s" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="513" y="1033" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m14t" value="" style="shape=ellipse;perimeter=ellipsePerimeter;fillColor=none;strokeColor=none;opacity=0;" vertex="1" parent="1">
+          <mxGeometry x="888" y="1033" width="4" height="4" as="geometry"/>
+        </mxCell>
+        <mxCell id="m14" value="14. Store completion and payment status" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;strokeColor=#193B61;fontColor=#243B53;fontSize=12;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="m14s" target="m14t">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="Booking requires customer sign-in. Payment status records cash collection; no online gateway is connected." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#FFF8E7;strokeColor=#C58B2B;fontColor=#4A3B22;fontSize=12;size=18;" vertex="1" parent="1">
+          <mxGeometry x="500" y="900" width="310" height="85" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

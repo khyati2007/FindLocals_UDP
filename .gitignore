@@ -1,0 +1,17 @@
+**/node_modules/
+**/dist/
+**/__pycache__/
+backend/.runtime-deps/
+backend/mysql_vendor/
+backend/findlocals.db
+backend/findlocals.db-shm
+backend/findlocals.db-wal
+backend/.env
+backend/.env.*
+!backend/.env.example
+database_design_render/
+
+# Environment files - never upload secret credentials
+.env
+.env.*
+!.env.example
